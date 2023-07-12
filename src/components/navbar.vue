@@ -1,16 +1,16 @@
 <template>
   <div class="bg-[#1C1E53]">
-<div class="xs:hidden md:block">
+<div class="">
     <div class="max-w-[1280px] mx-auto md:py-5 py-3 xs:px-5 xl:px-0  flex flex-col md:flex-row gap-3 justify-between items-center">
       <div>
-        <img
+        <router-link to="/"> <img
           src="../../public/images/nav-icon.png"
           alt=""
           class="cursor-pointer"
-        />
+        /></router-link>
       </div>
-      <div class="flex flex-col md:flex-row items-center gap-2 text-[#BBBBCB] md:gap-8 md:text-base text-sm " >
-        <p class="text-white cursor-pointer">Home</p>
+      <div class="flex flex-col md:flex-row items-center gap-2 text-[#BBBBCB] md:gap-5 md:text-base text-sm " >
+        <router-link to="/"><p class="text-white cursor-pointer">Home</p></router-link>
         <p class="cursor-pointer">About us</p>
         <p class="cursor-pointer">Features</p>
         <p class="cursor-pointer">Pricing</p>
@@ -27,12 +27,12 @@
   </div>
 
 
-    <nav class="bg-[#1C1E53] md:hidden ">
+    <nav class="bg-[#1C1E53] hidden ">
     <div class="container px-6 py-3 mx-auto">
         <div class="md:flex justify-between items-center">
             <!-- left section -->
             <div class="flex justify-between items-center">
-                <a href="#" class="text-gray-800 text-xl font-bold hover:text-gray-700 md:text-2xl"><img src="../../public/images/nav-icon.png" alt=""></a>
+              <router-link to="/"><a href="#" class="text-gray-800 text-xl font-bold hover:text-gray-700 md:text-2xl"><img src="../../public/images/nav-icon.png" alt=""></a></router-link>
                 <div class="md:hidden">
                     <button id="nav-button" type="button" class="text-white hover:text-gray-600 focus:text-gray-600 focus:outline-none">
                         <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
