@@ -24,7 +24,7 @@ import Footer from "./components/footer.vue";
       />
     </div>
     <div class="md:max-w-[830px] max-w-[450px] mx-auto md:mb-28 px-5 lg:px-0">
-      <p class="md:text-base md:text-sm text-[#282938] font-normal opacity-70 md:leading-7 text-center md:mt-12 mt-6 max-w-[831px]">
+      <p class="md:text-base text-[#282938] font-normal opacity-70 md:leading-7 text-center md:mt-12 mt-6 max-w-[831px]">
         Apparently we had reached a great height in the atmosphere, for the sky
         was a dead black, and the stars had ceased to twinkle. By the same
         illusion which lifts the horizon of the sea to the level of the

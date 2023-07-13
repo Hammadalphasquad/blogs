@@ -26,7 +26,7 @@ export default {
       <div v-for="card of cards" :key="card.id" class="max-w-[405px]">
         <router-link :to="`/blogsDetails/${card.id}`">
         <img :src="card.url" alt="Blog Image" />
-        <p class="text-[#282938] opacity-70 text-xs leading-7 font-medium mt-8">27 jan 2021</p>
+        <p class="text-[#282938] opacity-70 text-xs leading-7 font-medium mt-8">13 july 2023</p>
         <p class="text-[#282938] text-2xl font-medium leading-9 mt-4 pr-10 h-[70px] overflow-hidden">{{ card.title }}</p>
         <p class="text-[#282938] opacity-70 text-base font-normal leading-7 mt-4">{{ card.body }}</p>
        
