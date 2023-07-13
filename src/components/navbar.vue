@@ -9,7 +9,7 @@
           class="cursor-pointer"
         /></router-link>
       </div>
-      <div class="flex flex-col md:flex-row items-center gap-2 text-[#BBBBCB] md:gap-5 md:text-base text-sm " >
+      <div class="flex flex-col sm:flex-row items-center gap-2 text-[#BBBBCB] md:gap-5 md:text-base text-sm " >
         <router-link to="/"><p class="text-white cursor-pointer">Home</p></router-link>
         <p class="cursor-pointer">About us</p>
         <p class="cursor-pointer">Features</p>
