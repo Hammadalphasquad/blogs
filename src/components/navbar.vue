@@ -18,15 +18,15 @@
           class="flex flex-col sm:flex-row items-center text-[#BBBBCB] md:gap-6 md:text-base text-sm"
         >
           <router-link to="/">
-            <p class="text-white cursor-pointer transition duration-300 ease-in-out hover:scale-150">Home</p>
+            <p class="text-white cursor-pointer transition duration-300 ease-in-out hover:scale-125">Home</p>
           </router-link>
-          <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-150">About us</p>
-          <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-150">Features</p>
-          <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-150">Pricing</p>
-          <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-150">FAQ</p>
-          <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-150">Blog</p>
+          <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">About us</p>
+          <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">Features</p>
+          <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">Pricing</p>
+          <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">FAQ</p>
+          <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">Blog</p>
           <p
-            class="border-[2px] border-[#474975] rounded-[41px] md:py-2 py-1 md:px-6 px-5 cursor-pointer transition duration-300 ease-in-out hover:scale-125"
+            class="border-[2px] border-[#474975] rounded-[41px] md:py-2 py-1 md:px-6 px-5 cursor-pointer transition duration-300 ease-in-out hover:scale-110"
           >Contact us</p>
         </div>
       </div>
