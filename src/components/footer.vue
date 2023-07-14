@@ -5,7 +5,7 @@
     <div class="bg-[#1C1E53]">
       <div class="max-w-[1280px] mx-auto">
         <div
-          class="max-w-[1058px] flex items-start flex-col md:flex-row justify-between gap-5 md:pt-24 pt-10 px-5 2xl:px-0"
+          class="max-w-[1058px] flex items-start flex-col md:flex-row justify-between gap-10 md:pt-24 pt-10 px-5 2xl:px-0"
         >
           <div class="">
             <img src="../../public/images/nav-icon.png" class="md:mb-[23px] xs:w-[100px] md:w-44 mb-3" />
