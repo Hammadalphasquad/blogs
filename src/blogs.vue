@@ -33,7 +33,7 @@ import Footer from "./components/footer.vue";
       >Read more</p>
     </div>
     <p
-      class="md:text-5xl text-xl text-[#282938] font-semibold md:leading-[64px] leading-8 text-center md:mt-32 mt-12 md:mb-16 mb-8"
+      class="transition duration-300 ease-in-out hover:scale-110 md:text-5xl text-xl text-[#282938] font-semibold md:leading-[64px] leading-8 text-center md:mt-32 mt-12 md:mb-16 mb-8 "
     >Our Blog</p>
 
     <Cards />

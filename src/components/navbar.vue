@@ -11,11 +11,11 @@
             to="/"
             class="text-xl font-bold text-gray-100 md:text-2xl hover:text-indigo-400"
           >
-            <p class="light transition duration-300 ease-in-out hover:scale-150" data-text="{FINSWEET">{FINSWEET</p>
+            <p class="light transition duration-300 ease-in-out hover:scale-125" data-text="{FINSWEET">{FINSWEET</p>
           </router-link>
         </div>
         <div
-          class="flex flex-col sm:flex-row items-center text-[#BBBBCB] md:gap-8 md:text-base text-sm"
+          class="flex flex-col sm:flex-row items-center text-[#BBBBCB] md:gap-6 md:text-base text-sm"
         >
           <router-link to="/">
             <p class="text-white cursor-pointer transition duration-300 ease-in-out hover:scale-150">Home</p>
@@ -76,22 +76,22 @@
           <router-link to="/">
             <li class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150" @click="toggleNav">Home</li>
           </router-link>
-        <p class="max-w-xs w-full bg-black h-[1px] ">
+        <p class="max-w-xs w-full bg-white h-[1px] opacity-50">
         </p>
           <li class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150" @click="toggleNav">About us</li>
-          <p class="max-w-xs w-full bg-black h-[1px] box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05)">
+          <p class="max-w-xs w-full bg-white h-[1px] opacity-50">
         </p>
           <li class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150" @click="toggleNav">Features</li>
-          <p class="max-w-xs w-full bg-black h-[1px] box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05)">
+          <p class="max-w-xs w-full bg-white h-[1px] opacity-50">
         </p>
           <li class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150" @click="toggleNav">Pricing</li>
-          <p class="max-w-xs w-full bg-black h-[1px]">
+          <p class="max-w-xs w-full bg-white h-[1px] opacity-50">
         </p>
           <li class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150" @click="toggleNav">FAQ</li>
-          <p class="max-w-xs w-full bg-black h-[1px]">
+          <p class="max-w-xs w-full bg-white h-[1px] opacity-50">
         </p>
           <li class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150" @click="toggleNav">Blog</li>
-          <p class="max-w-xs w-full bg-black h-[1px]">
+          <p class="max-w-xs w-full bg-white h-[1px] opacity-50">
         </p>
           <li
             class="border-[2px] border-[#474975] text-gray-100 hover:text-indigo-400 rounded-[41px] md:py-2 py-1 md:px-6 px-5 text-center cursor-pointer transition duration-300 ease-in-out hover:scale-125" @click="toggleNav"
@@ -115,7 +115,7 @@
   content: attr(data-text);
   text-shadow: 0px 0px 20px var(--var-color);
   filter: blur(10px) brightness(0);
-  animation: flicker 2s linear forwards;
+  animation: flicker 10s linear forwards;
   animation-delay: 1s;
 }
 

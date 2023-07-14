@@ -5,10 +5,10 @@
     <div class="bg-[#1C1E53]">
       <div class="max-w-[1280px] mx-auto">
         <div
-          class="max-w-[1058px] flex flex-col md:flex-row justify-between gap-5 md:pt-24 pt-10 px-5 2xl:px-0"
+          class="max-w-[1058px] flex items-start flex-col md:flex-row justify-between gap-5 md:pt-24 pt-10 px-5 2xl:px-0"
         >
-          <div class>
-            <img src="../../public/images/nav-icon.png" class="md:mb-[23px] mb-3" />
+          <div class="">
+            <img src="../../public/images/nav-icon.png" class="md:mb-[23px] xs:w-[100px] md:w-44 mb-3" />
             <p
               class="md:text-base text-sm md:font-medium md:leading-7 leading-4 text-white opacity-80 md:max-w-[399px]"
             >
@@ -19,7 +19,7 @@
 
           <div>
             <p
-              class="md:text-5xl text-xl font-semibold text-[white] md:leading-[64px] md:mb-[14px] mb-1"
+              class="md:text-5xl text-xl font-semibold text-[white]  md:mb-[14px] mb-1"
             >Lets Talk!</p>
             <p
               class="max-w-[399px] text-[#F4F6FC] opacity-80 text-base font-normal md:leading-7 mb-7"
@@ -27,7 +27,7 @@
               We are always open to discuss your project, improve your online
               presence and help with your UX/UI design challenges.
             </p>
-            <img src="../../public/images/footer-icons.png" alt="" />
+            <img src="../../public/images/footer-icons.png" />
           </div>
         </div>
         <div
