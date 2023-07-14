@@ -1,7 +1,7 @@
 <template>
 
   <!-- Footer -->
-  
+
 <div>
   <div class="bg-[#1C1E53]">
     <div class="max-w-[1280px] mx-auto">
@@ -60,9 +60,7 @@
   Copyright 2021, Finsweet.com
   </p>
   <div class="flex md:gap-8 gap-2 md:text-base text-sm font-medium md:leading-7 text-[#282938]">
-  <p class="cursor-pointer">
-  Home
-  </p>
+  <router-link to="/"><p class="cursor-pointer">Home</p></router-link>
   <p class="cursor-pointer">
   About us
   </p>
