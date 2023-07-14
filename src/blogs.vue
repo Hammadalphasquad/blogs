@@ -5,6 +5,9 @@ import Footer from "./components/footer.vue";
 </script>
 
 <template>
+
+  <!-- Blogs -->
+  
   <div>
     <Navbar />
    

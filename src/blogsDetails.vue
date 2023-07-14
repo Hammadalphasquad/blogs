@@ -26,6 +26,9 @@ export default {
 </script>
 
 <template>
+
+  <!-- BlogsDetails -->
+  
   <div >
     <navbar />
     <div class="max-w-[1280px] mx-auto text-center md:mt-24 mt-10">

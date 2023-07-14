@@ -1,4 +1,7 @@
 <template>
+
+  <!-- Footer -->
+  
 <div>
   <div class="bg-[#1C1E53]">
     <div class="max-w-[1280px] mx-auto">
