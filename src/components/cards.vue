@@ -21,7 +21,7 @@ export default {
 
   <div class="mx-auto flex justify-center">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:mb-32 mb-10 px-5 md:px-5">
-      <div v-for="card of cards" :key="card.id" class="max-w-[405px] scale-100 hover:scale-110 ease-in duration-200">
+      <div v-for="card of cards" :key="card.id" class="max-w-[405px] scale-90 hover:scale-100 ease-in duration-200">
         <router-link :to="`/blogsDetails/${card.id}`">
           <img :src="card.url" alt="Blog Image" />
           <p class="text-[#282938] opacity-70 text-xs leading-7 font-medium mt-8">13 july 2023</p>
