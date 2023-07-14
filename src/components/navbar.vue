@@ -77,8 +77,8 @@
         :class="showMenu ? 'flex' : 'hidden'"
         class="
           flex-col
-          mt-8
-          space-y-4
+          items-center
+          space-y-7
           
         "
       >
