@@ -74,27 +74,27 @@
         </div>
         <ul :class="showMenu ? 'flex' : 'hidden'" class="flex-col items-center space-y-7 mb-2">
           <router-link to="/">
-            <li class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150">Home</li>
+            <li class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150" @click="toggleNav">Home</li>
           </router-link>
         <p class="max-w-xs w-full bg-black h-[1px] ">
         </p>
-          <li class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150">About us</li>
+          <li class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150" @click="toggleNav">About us</li>
+          <p class="max-w-xs w-full bg-black h-[1px] box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05)">
+        </p>
+          <li class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150" @click="toggleNav">Features</li>
+          <p class="max-w-xs w-full bg-black h-[1px] box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05)">
+        </p>
+          <li class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150" @click="toggleNav">Pricing</li>
           <p class="max-w-xs w-full bg-black h-[1px]">
         </p>
-          <li class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150">Features</li>
+          <li class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150" @click="toggleNav">FAQ</li>
           <p class="max-w-xs w-full bg-black h-[1px]">
         </p>
-          <li class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150">Pricing</li>
-          <p class="max-w-xs w-full bg-black h-[1px]">
-        </p>
-          <li class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150">FAQ</li>
-          <p class="max-w-xs w-full bg-black h-[1px]">
-        </p>
-          <li class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150">Blog</li>
+          <li class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150" @click="toggleNav">Blog</li>
           <p class="max-w-xs w-full bg-black h-[1px]">
         </p>
           <li
-            class="border-[2px] border-[#474975] text-gray-100 hover:text-indigo-400 rounded-[41px] md:py-2 py-1 md:px-6 px-5 text-center cursor-pointer transition duration-300 ease-in-out hover:scale-125"
+            class="border-[2px] border-[#474975] text-gray-100 hover:text-indigo-400 rounded-[41px] md:py-2 py-1 md:px-6 px-5 text-center cursor-pointer transition duration-300 ease-in-out hover:scale-125" @click="toggleNav"
           >Contact us</li>
         </ul>
       </nav>

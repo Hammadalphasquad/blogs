@@ -8,7 +8,7 @@
           class="max-w-[1058px] flex flex-col md:flex-row justify-between gap-5 md:pt-24 pt-10 px-5 2xl:px-0"
         >
           <div class>
-            <img src="../../public/images/nav-icon.png" alt class="md:mb-[23px] mb-3" />
+            <img src="../../public/images/nav-icon.png" class="md:mb-[23px] mb-3" />
             <p
               class="md:text-base text-sm md:font-medium md:leading-7 leading-4 text-white opacity-80 md:max-w-[399px]"
             >
@@ -27,7 +27,7 @@
               We are always open to discuss your project, improve your online
               presence and help with your UX/UI design challenges.
             </p>
-            <img src="../../public/images/footer-icons.png" alt />
+            <img src="../../public/images/footer-icons.png" alt="" />
           </div>
         </div>
         <div
@@ -56,12 +56,12 @@
       >Copyright 2021, Finsweet.com</p>
       <div class="flex md:gap-8 gap-2 md:text-base text-sm font-medium md:leading-7 text-[#282938]">
         <router-link to="/">
-          <p class="cursor-pointer">Home</p>
+          <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-150">Home</p>
         </router-link>
-        <p class="cursor-pointer">About us</p>
-        <p class="cursor-pointer">Features</p>
-        <p class="cursor-pointer">FAQ</p>
-        <p class="cursor-pointer">Blog</p>
+        <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-150">About us</p>
+        <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-150">Features</p>
+        <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-150">FAQ</p>
+        <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-150">Blog</p>
       </div>
     </div>
   </div>
