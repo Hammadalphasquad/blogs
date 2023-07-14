@@ -56,12 +56,12 @@
       >Copyright 2021, Finsweet.com</p>
       <div class="flex md:gap-8 gap-2 md:text-base text-sm font-medium md:leading-7 text-[#282938]">
         <router-link to="/">
-          <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-150">Home</p>
+          <p class="cursor-pointer">Home</p>
         </router-link>
-        <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-150">About us</p>
-        <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-150">Features</p>
+        <p class="cursor-pointer">About us</p>
+        <p class="cursor-pointer">Features</p>
         <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-150">FAQ</p>
-        <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-150">Blog</p>
+        <p class="cursor-pointer">Blog</p>
       </div>
     </div>
   </div>
