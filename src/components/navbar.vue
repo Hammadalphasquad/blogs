@@ -55,8 +55,7 @@
     <nav
       class="
         container
-        px-6
-        py-8
+        py-2
         mx-auto
         md:flex md:justify-between md:items-center
       "
@@ -75,20 +74,18 @@
         </router-link>
         <!-- Mobile menu button -->
         <div @click="toggleNav" class="flex md:hidden">
-          <button class="relative group">
-        <div class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-slate-700 ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
-          <div class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
-            <div class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10"></div>
-            <div class="bg-white h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-x-10 delay-75"></div>
-            <div class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10 delay-150"></div>
-
-            <div class="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12">
-              <div class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"></div>
-              <div class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"></div>
-            </div>
-          </div>
-        </div>
-      </button>
+          <div class="relative py-3 sm:max-w-xl mx-auto">
+        <nav x-data="{ open: false }">
+            <button class="w-14 h-14 relative focus:outline-none bg-[#1C1E53] rounded" @click="open = !open">
+               
+                <div class="block w-5 absolute left-6 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
+                    <span  class="block absolute h-0.5 w-7 text-white bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
+                    <span  class="block absolute  h-0.5 w-5 text-white bg-current   transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
+                    <span  class="block absolute  h-0.5 w-7 text-white bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
+                </div>
+            </button>
+        </nav>
+    </div>
         </div>
       </div>
 
@@ -102,12 +99,17 @@
           md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0
         "
       >
-      <router-link to="/"><li class="text-white cursor-pointer">Home</li></router-link>
+      <router-link to="/"><li class="text-gray-100 hover:text-indigo-400 cursor-pointer">Home</li></router-link>
         <li class="text-gray-100 hover:text-indigo-400 cursor-pointer">About us</li>
         <li class="text-gray-100 hover:text-indigo-400 cursor-pointer">Features</li>
         <li class="text-gray-100 hover:text-indigo-400 cursor-pointer">Pricing</li>
         <li class="text-gray-100 hover:text-indigo-400 cursor-pointer">FAQ</li>
         <li class="text-gray-100 hover:text-indigo-400 cursor-pointer">Blog</li>
+        <li
+          class="border-[2px] border-[#474975] text-gray-100 hover:text-indigo-400 rounded-[41px] md:py-2 py-1 md:px-6 px-5 cursor-pointer"
+        > 
+          Contact us
+        </li>
       </ul>
     </nav>
   </div>
