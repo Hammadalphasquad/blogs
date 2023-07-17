@@ -4,13 +4,14 @@ import { createRouter, createWebHistory } from "vue-router";
 
 import HomePage from "./blogs.vue";
 import SecondPage from "./blogsDetails.vue";
+import Home from "./home.vue";
 import "tailwindcss/tailwind.css";
 const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: "/", component: HomePage },
     { path: "/blogsDetails/:id", component: SecondPage },
-     
+     {path: "/home", component:Home }
   ],
 })
 

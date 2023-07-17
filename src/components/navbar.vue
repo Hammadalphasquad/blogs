@@ -4,7 +4,7 @@
   <div class="bg-[#1C1E53]">
     <div class="hidden md:block">
       <div
-        class="max-w-[1280px] mx-auto md:py-5 py-3 xs:px-5 xl:px-5 2xl:px-0 flex flex-col md:flex-row gap-3 justify-between items-center"
+        class="max-w-[1280px] mx-auto md:py-5 py-3 xs:px-5 xl:px-5 2xl:px-0 2xl:py-8 flex flex-col md:flex-row gap-3 justify-between items-center"
       >
         <div>
           <router-link
@@ -24,8 +24,9 @@
           <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">Features</p>
           <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">Pricing</p>
           <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">FAQ</p>
-          <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">Blog</p>
+        <router-link to="/home">  <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">Blog</p> </router-link>
           <p
+
             class="border-[2px] border-[#474975] rounded-[41px] md:py-2 py-1 md:px-6 px-5 cursor-pointer transition duration-300 ease-in-out hover:scale-110"
           >Contact us</p>
         </div>
