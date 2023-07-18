@@ -20,7 +20,7 @@ export default {
   <!-- Cards -->
 
   <div class="mx-auto flex justify-center">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:mb-32 mb-10 px-5 md:px-5">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:mb-32 mb-10 md:px-5">
       <div v-for="card of cards" :key="card.id" class="max-w-[405px] scale-90 hover:scale-100 ease-in duration-200">
         <router-link :to="`/blogsDetails/${card.id}`">
           <img :src="card.url" alt="Blog Image" />

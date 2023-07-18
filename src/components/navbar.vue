@@ -20,7 +20,7 @@
           <router-link to="/">
             <p class="text-white cursor-pointer transition duration-300 ease-in-out hover:scale-125">Home</p>
           </router-link>
-          <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">About us</p>
+         <router-link to="/aboutus"> <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">About us</p> </router-link>
           <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">Features</p>
           <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">Pricing</p>
           <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">FAQ</p>
