@@ -12,7 +12,7 @@ import Footer from "./components/footer.vue";
       <div class="flex flex-col items-center lg:flex-row xs:mx-5">
         <div
           class="max-w-[640px] md:min-h-[691px] w-full"
-          style="background-image: url(../public/images/seventh-page-bg.png); background-repeat: no-repeat; background-size: cover;"
+          style="background-image: url(/images/seventh-page-bg.png); background-repeat: no-repeat; background-size: cover;"
         >
           <div class="max-w-[420px] text-white mx-5 md:mx-auto my-10">
             <p
