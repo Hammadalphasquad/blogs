@@ -7,26 +7,31 @@
         class="max-w-[1280px] mx-auto md:py-5 py-3 xs:px-5 xl:px-5 2xl:px-0 2xl:py-8 flex flex-col md:flex-row gap-3 justify-between items-center"
       >
         <div>
-          <router-link
-            to="/"
-            class="text-xl font-bold text-gray-100 md:text-2xl hover:text-indigo-400"
-          >
-            <p class="light transition duration-300 ease-in-out hover:scale-125" data-text="{FINSWEET">{FINSWEET</p>
+          <router-link to="/">
+            <p
+              class="text-xl font-bold text-gray-100 md:text-2xl hover:text-indigo-400 light transition duration-300 ease-in-out hover:scale-125"
+              data-text="{FINSWEET"
+            >{FINSWEET</p>
           </router-link>
         </div>
         <div
           class="flex flex-col sm:flex-row items-center text-[#BBBBCB] md:gap-6 md:text-base text-sm"
         >
           <router-link to="/">
-            <p class="text-white cursor-pointer transition duration-300 ease-in-out hover:scale-125">Home</p>
+            <p
+              class="text-white cursor-pointer transition duration-300 ease-in-out hover:scale-125"
+            >Home</p>
           </router-link>
-         <router-link to="/aboutus"> <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">About us</p> </router-link>
+          <router-link to="/aboutus">
+            <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">About us</p>
+          </router-link>
           <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">Features</p>
           <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">Pricing</p>
           <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">FAQ</p>
-        <router-link to="/home">  <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">Blog</p> </router-link>
+          <router-link to="/Blogs">
+            <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">Blog</p>
+          </router-link>
           <p
-
             class="border-[2px] border-[#474975] rounded-[41px] md:py-2 py-1 md:px-6 px-5 cursor-pointer transition duration-300 ease-in-out hover:scale-110"
           >Contact us</p>
         </div>
@@ -75,27 +80,40 @@
         </div>
         <ul :class="showMenu ? 'flex' : 'hidden'" class="flex-col items-center space-y-7 mb-2">
           <router-link to="/">
-            <li class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150" @click="toggleNav">Home</li>
+            <li
+              class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150"
+              @click="toggleNav"
+            >Home</li>
           </router-link>
-        <p class="max-w-xs w-full bg-white h-[1px] opacity-50">
-        </p>
-          <li class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150" @click="toggleNav">About us</li>
-          <p class="max-w-xs w-full bg-white h-[1px] opacity-50">
-        </p>
-          <li class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150" @click="toggleNav">Features</li>
-          <p class="max-w-xs w-full bg-white h-[1px] opacity-50">
-        </p>
-          <li class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150" @click="toggleNav">Pricing</li>
-          <p class="max-w-xs w-full bg-white h-[1px] opacity-50">
-        </p>
-          <li class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150" @click="toggleNav">FAQ</li>
-          <p class="max-w-xs w-full bg-white h-[1px] opacity-50">
-        </p>
-          <li class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150" @click="toggleNav">Blog</li>
-          <p class="max-w-xs w-full bg-white h-[1px] opacity-50">
-        </p>
+          <p class="max-w-xs w-full bg-white h-[1px] opacity-50"></p>
+          <router-link to="/aboutus"><li
+            class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150"
+            @click="toggleNav"
+          >About us</li></router-link>
+          <p class="max-w-xs w-full bg-white h-[1px] opacity-50"></p>
           <li
-            class="border-[2px] border-[#474975] text-gray-100 hover:text-indigo-400 rounded-[41px] md:py-2 py-1 md:px-6 px-5 text-center cursor-pointer transition duration-300 ease-in-out hover:scale-125" @click="toggleNav"
+            class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150"
+            @click="toggleNav"
+          >Features</li>
+          <p class="max-w-xs w-full bg-white h-[1px] opacity-50"></p>
+          <li
+            class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150"
+            @click="toggleNav"
+          >Pricing</li>
+          <p class="max-w-xs w-full bg-white h-[1px] opacity-50"></p>
+          <li
+            class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150"
+            @click="toggleNav"
+          >FAQ</li>
+          <p class="max-w-xs w-full bg-white h-[1px] opacity-50"></p>
+          <router-link to="/Blogs"><li
+            class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150"
+            @click="toggleNav"
+          >Blog</li></router-link>
+          <p class="max-w-xs w-full bg-white h-[1px] opacity-50"></p>
+          <li
+            class="border-[2px] border-[#474975] text-gray-100 hover:text-indigo-400 rounded-[41px] md:py-2 py-1 md:px-6 px-5 text-center cursor-pointer transition duration-300 ease-in-out hover:scale-125"
+            @click="toggleNav"
           >Contact us</li>
         </ul>
       </nav>

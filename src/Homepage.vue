@@ -65,17 +65,17 @@ export default {
       <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10 md:gap-28 xs:px-5 md:px-5 lg:px-0">
         <div class="max-w-[582px] md:flex-none flex flex-col gap-3">
           <p
-            class="xs:text-sm md:text-[54px] font-semibold md:leading-[74px] text-white lg:mb-6"
+            class="text-2xl md:text-[54px] font-semibold md:leading-[74px] text-white lg:mb-6"
           >Building stellar websites for early startups</p>
           <p
             class="xs:text-xs md:text-base text-white font-normal md:leading-7 opacity-70 md:mb-12"
           >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-          <div class="flex xs:flex-col md:flex-row gap-3 md:gap-10 items-center">
+          <div class="flex xs:flex-col md:flex-row gap-6 my-4 md:my-0 md:gap-10 items-center">
             <p
-              class="text-xs lg:text-[18px] font-semibold text-[#1B1C2B] md:leading-8 bg-[#FCD980] border-[#FCD980] rounded-[41px] px-2 md:px-6 py-[2px] md:py-2 cursor-pointer"
+              class="text-xs lg:text-[18px] font-semibold text-[#1B1C2B] md:leading-8 bg-[#FCD980] border-[#FCD980] rounded-[41px] px-3 md:px-6 py-2 md:py-2 cursor-pointer"
             >View our work</p>
             <div class="flex items-center gap-2 lg:gap-5 cursor-pointer text-white">
-              <p class="md:text-base text-xs font-medium md:leading-7">View More</p>
+              <p class="md:text-base  text-xs font-medium md:leading-7">View More</p>
               <svg
                 width="25"
                 height="12"
@@ -212,12 +212,12 @@ export default {
     <div class="bg-[#F4F6FC] flex flex-col justify-center sm:min-h-[850px] md:min-h-[1191px] xs:px-5 lg:px-0">
       <div class="max-w-7xl mx-auto flex flex-col gap-10">
         <div class="max-w-[625px] mx-auto">
-          <p class="text-sm md:text-base font-medium leading-7 text-center mb-5">Features</p>
+          <p class="text-sm md:text-base font-medium leading-7 text-center my-5 md:mb-5">Features</p>
           <p
             class="text-xl md:text-5xl font-semibold md:leading-[64px] text-center"
           >Design that solves problems, one product at a time</p>
         </div>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 mx-auto pb-5 lg:pb-0">
           <div
             v-for="(item,index) in items"
             :key="index"
@@ -456,19 +456,19 @@ export default {
             <input
               type="text"
               placeholder="Your Name"
-              class="w-full mb-4 text-sm md:text-base text-[#F4F6FC] font-normal leading-7 py-2 md:py-4 pl-4 md:pl-8 border-[2px] bg-[#1C1E53] border-[#FFFFFF0D] rounded-lg"
+              class="w-full mb-6 text-sm md:text-base text-[#F4F6FC] font-normal leading-7 py-2 md:py-4 pl-4 md:pl-8 border-[2px] bg-[#1C1E53] border-[#FFFFFF0D] rounded-lg"
             />
             <br />
             <input
               type="Email"
               placeholder=" Email"
-              class="w-full mb-4 text-sm md:text-base text-[#F4F6FC] font-normal leading-7 py-2 md:py-4 pl-4 md:pl-8 border-[2px] bg-[#1C1E53] border-[#FFFFFF0D] rounded-lg"
+              class="w-full mb-6 text-sm md:text-base text-[#F4F6FC] font-normal leading-7 py-2 md:py-4 pl-4 md:pl-8 border-[2px] bg-[#1C1E53] border-[#FFFFFF0D] rounded-lg"
             />
             <br />
             <input
               type="text"
               placeholder="Paste your Figma design URL"
-              class="w-full mb-4 text-sm md:text-base text-[#F4F6FC] font-normal leading-7 py-2 md:py-4 pl-4 md:pl-8 border-[2px] bg-[#1C1E53] border-[#FFFFFF0D] rounded-lg"
+              class="w-full mb-6 text-sm md:text-base text-[#F4F6FC] font-normal leading-7 py-2 md:py-4 pl-4 md:pl-8 border-[2px] bg-[#1C1E53] border-[#FFFFFF0D] rounded-lg"
             />
             <br />
             <button
