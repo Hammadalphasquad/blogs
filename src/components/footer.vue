@@ -58,10 +58,10 @@
         <router-link to="/">
           <p class="cursor-pointer">Home</p>
         </router-link>
-        <p class="cursor-pointer">About us</p>
+        <router-link to="/aboutus"><p class="cursor-pointer">About us</p></router-link>
         <p class="cursor-pointer">Features</p>
         <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-150">FAQ</p>
-        <p class="cursor-pointer">Blog</p>
+        <router-link to="/Blogs"><p class="cursor-pointer">Blog</p></router-link>
       </div>
     </div>
   </div>

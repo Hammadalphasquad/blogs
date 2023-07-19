@@ -19,21 +19,21 @@
         >
           <router-link to="/">
             <p
-              class="text-white cursor-pointer transition duration-300 ease-in-out hover:scale-125"
+              class="cursor-pointer transition duration-300 ease-in-out hover:scale-125"
             >Home</p>
           </router-link>
           <router-link to="/aboutus">
             <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">About us</p>
           </router-link>
-          <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">Features</p>
+          <router-link to="/features">  <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">Features</p> </router-link>
           <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">Pricing</p>
-          <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">FAQ</p>
+          <router-link to="/FAQ"> <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">FAQ</p></router-link>
           <router-link to="/Blogs">
             <p class="cursor-pointer transition duration-300 ease-in-out hover:scale-125">Blog</p>
           </router-link>
-          <p
-            class="border-[2px] border-[#474975] rounded-[41px] md:py-2 py-1 md:px-6 px-5 cursor-pointer transition duration-300 ease-in-out hover:scale-110"
-          >Contact us</p>
+          <router-link to="/ContactUs"> <p
+            class="border-[2px] border-[#474975] rounded-[41px] md:py-2 py-1 md:px-6 px-5 cursor-pointer transition duration-300 ease-in-out hover:scale-110 hover:text-[#1C1E53] hover:font-medium hover:bg-white"
+          >Contact us</p></router-link>
         </div>
       </div>
     </div>
@@ -91,30 +91,30 @@
             @click="toggleNav"
           >About us</li></router-link>
           <p class="max-w-xs w-full bg-white h-[1px] opacity-50"></p>
-          <li
+          <router-link to="/features"> <li
             class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150"
             @click="toggleNav"
-          >Features</li>
+          >Features</li></router-link>
           <p class="max-w-xs w-full bg-white h-[1px] opacity-50"></p>
           <li
             class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150"
             @click="toggleNav"
           >Pricing</li>
           <p class="max-w-xs w-full bg-white h-[1px] opacity-50"></p>
-          <li
+          <router-link to="/FAQ"><li
             class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150"
             @click="toggleNav"
-          >FAQ</li>
+          >FAQ</li></router-link>
           <p class="max-w-xs w-full bg-white h-[1px] opacity-50"></p>
           <router-link to="/Blogs"><li
             class="text-gray-100 hover:text-indigo-400 cursor-pointer transition duration-300 ease-in-out hover:scale-150"
             @click="toggleNav"
           >Blog</li></router-link>
           <p class="max-w-xs w-full bg-white h-[1px] opacity-50"></p>
-          <li
+          <router-link to="/ContactUs"><li
             class="border-[2px] border-[#474975] text-gray-100 hover:text-indigo-400 rounded-[41px] md:py-2 py-1 md:px-6 px-5 text-center cursor-pointer transition duration-300 ease-in-out hover:scale-125"
             @click="toggleNav"
-          >Contact us</li>
+          >Contact us</li></router-link>
         </ul>
       </nav>
     </div>

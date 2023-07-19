@@ -62,7 +62,9 @@ export default {
     <navbar />
     <!-- First-portion -->
     <div class="bg-[#1C1E53] xs:min-h-[300px] md:min-h-[760px] flex flex-col justify-center">
-      <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10 md:gap-28 xs:px-5 md:px-5 lg:px-0">
+      <div
+        class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10 md:gap-28 xs:px-5 md:px-5 lg:px-0"
+      >
         <div class="max-w-[582px] md:flex-none flex flex-col gap-3">
           <p
             class="text-2xl md:text-[54px] font-semibold md:leading-[74px] text-white lg:mb-6"
@@ -75,7 +77,7 @@ export default {
               class="text-xs lg:text-[18px] font-semibold text-[#1B1C2B] md:leading-8 bg-[#FCD980] border-[#FCD980] rounded-[41px] px-3 md:px-6 py-2 md:py-2 cursor-pointer"
             >View our work</p>
             <div class="flex items-center gap-2 lg:gap-5 cursor-pointer text-white">
-              <p class="md:text-base  text-xs font-medium md:leading-7">View More</p>
+              <p class="md:text-base text-xs font-medium md:leading-7">View More</p>
               <svg
                 width="25"
                 height="12"
@@ -92,9 +94,7 @@ export default {
           </div>
         </div>
         <div class="xs:mb-10">
-          <img
-            src="../public/images/first-page-bg.png"
-            alt/>
+          <img src="../public/images/first-page-bg.png" alt />
         </div>
       </div>
     </div>
@@ -105,7 +105,9 @@ export default {
         class="max-w-7xl px-6 lg:px-0 mx-auto flex flex-col md:flex-row items-start gap-16 md:gap-48"
       >
         <div class="max-w-[405px] flex flex-col gap-4 md:gap-8">
-          <p class="text-[#282938] text-lg md:text-2xl lg:text-5xl font-semibold leading[64px]">How we work</p>
+          <p
+            class="text-[#282938] text-lg md:text-2xl lg:text-5xl font-semibold leading[64px]"
+          >How we work</p>
           <p class="text-[#282938] opacity-70 text-sm md:text-[16px]">
             Lorem ipsum dolor sit amet, consectetur
             <br />adipiscing elit, sed do eiusmod tempor.
@@ -126,36 +128,36 @@ export default {
             </svg>
           </div>
         </div>
-        <div class="grid sm:grid-cols-2 gap-8 md:gap-12 mr-5 lg:mr-0">
-          <div class="max-w-[328px]">
-            <img src="../public/images/second-page-icon1.png" alt class="mb-2 md:mb-4" />
-            <p class="text-[#282938] text-[32px] font-medium leading[48px] md:mb-2">Strategy</p>
+        <div class="grid mx-auto sm:grid-cols-2 gap-8 md:gap-12 lg:mr-0">
+          <div class="max-w-[328px] ">
+            <img src="../public/images/second-page-icon1.png" alt class="mb-2 md:mb-4 mx-auto sm:mx-0" />
+            <p class="text-[#282938] text-[32px] font-medium leading[48px] md:mb-2 text-center sm:text-left">Strategy</p>
             <p
-              class="text-[#282938] text-base leading-7 opacity-70"
+              class="text-[#282938] text-base leading-7 opacity-70 text-center sm:text-left"
             >Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</p>
           </div>
 
           <div class="max-w-[328px]">
-            <img src="../public/images/second-page-icon2.png" alt class="mb-2 md:mb-4" />
-            <p class="text-[#282938] text-[32px] font-medium leading[48px] md:mb-2">Wireframing</p>
+            <img src="../public/images/second-page-icon2.png" alt class="mb-2 md:mb-4 mx-auto sm:mx-0" />
+            <p class="text-[#282938] text-[32px] font-medium leading[48px] md:mb-2 text-center sm:text-left">Wireframing</p>
             <p
-              class="text-[#282938] text-base leading-7 opacity-70"
+              class="text-[#282938] text-base leading-7 opacity-70 text-center sm:text-left"
             >Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</p>
           </div>
 
           <div class="max-w-[328px]">
-            <img src="../public/images/second-page-icon3.png" alt class="mb-2 md:mb-4" />
-            <p class="text-[#282938] text-[32px] font-medium leading[48px] md:mb-2">Design</p>
+            <img src="../public/images/second-page-icon3.png" alt class="mb-2 md:mb-4 mx-auto sm:mx-0" />
+            <p class="text-[#282938] text-[32px] font-medium leading[48px] md:mb-2 text-center sm:text-left">Design</p>
             <p
-              class="text-[#282938] text-base leading-7 opacity-70"
+              class="text-[#282938] text-base leading-7 opacity-70 text-center sm:text-left"
             >Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</p>
           </div>
 
           <div class="max-w-[328px]">
-            <img src="../public/images/second-page-icon4.png" alt class="mb-2 md:mb-4" />
-            <p class="text-[#282938] text-[32px] font-medium leading[48px] md:mb-2">Development</p>
+            <img src="../public/images/second-page-icon4.png" alt class="mb-2 md:mb-4 mx-auto sm:mx-0" />
+            <p class="text-[#282938] text-[32px] font-medium leading[48px] md:mb-2 text-center sm:text-left">Development</p>
             <p
-              class="text-[#282938] text-base leading-7 opacity-70"
+              class="text-[#282938] text-base leading-7 opacity-70 text-center sm:text-left"
             >Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</p>
           </div>
         </div>
@@ -209,10 +211,12 @@ export default {
     </div>
 
     <!-- fourth-portion -->
-    <div class="bg-[#F4F6FC] flex flex-col justify-center sm:min-h-[850px] md:min-h-[1191px] xs:px-5 lg:px-0">
+    <div
+      class="bg-[#F4F6FC] flex flex-col justify-center sm:min-h-[850px] md:min-h-[1191px] xs:px-5 lg:px-0"
+    >
       <div class="max-w-7xl mx-auto flex flex-col gap-10">
         <div class="max-w-[625px] mx-auto">
-          <p class="text-sm md:text-base font-medium leading-7 text-center my-5 md:mb-5">Features</p>
+          <p class="text-base md:text-lg font-medium leading-7 text-center my-5 md:mb-5">Features</p>
           <p
             class="text-xl md:text-5xl font-semibold md:leading-[64px] text-center"
           >Design that solves problems, one product at a time</p>
@@ -294,9 +298,9 @@ export default {
         <div class="flex flex-col lg:flex-row gap-10 lg:gap-52 mx-5 lg:mx-0">
           <div class="max-w-[328px] text-[#282938] mt-5 md:mt-0">
             <p
-              class="text-lg md:text-[38px] font-semibold leading-8 md:leading-[56px]"
+              class="text-lg md:text-[38px] font-semibold leading-8 md:leading-[56px] mb-1 md:mb-5"
             >Frequently asked questions</p>
-            <p class="text-[#2405F2] text-[18px] leading-8 font-medium">Contact us for more info</p>
+            <p class="text-[#2405F2] text-[18px] leading-8 font-medium cursor-pointer">Contact us for more info</p>
           </div>
           <div class="max-w-[846.31px] text-[#282938]">
             <div class="flex justify-between mb-4 md:mb-8">
@@ -338,15 +342,15 @@ export default {
               </div>
               <svg
                 class="opacity-70 cursor-pointer"
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   opacity="0.7"
-                  d="M12.1495 13.1605L7.12057 8.1316L1.96717 13.285L0.711315 12.0292L5.86472 6.87575L0.835794 1.84682L1.84269 0.839932L6.87161 5.86886L12.025 0.715453L13.2809 1.9713L8.12746 7.12471L13.1564 12.1536L12.1495 13.1605Z"
+                  d="M16 8.71198H8.88802V16H7.11198V8.71198H0V7.28802H7.11198V0H8.88802V7.28802H16V8.71198Z"
                   fill="#282938"
                 />
               </svg>
@@ -363,15 +367,15 @@ export default {
               </div>
               <svg
                 class="opacity-70 cursor-pointer"
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   opacity="0.7"
-                  d="M12.1495 13.1605L7.12057 8.1316L1.96717 13.285L0.711315 12.0292L5.86472 6.87575L0.835794 1.84682L1.84269 0.839932L6.87161 5.86886L12.025 0.715453L13.2809 1.9713L8.12746 7.12471L13.1564 12.1536L12.1495 13.1605Z"
+                  d="M16 8.71198H8.88802V16H7.11198V8.71198H0V7.28802H7.11198V0H8.88802V7.28802H16V8.71198Z"
                   fill="#282938"
                 />
               </svg>
@@ -388,15 +392,15 @@ export default {
               </div>
               <svg
                 class="opacity-70 cursor-pointer"
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   opacity="0.7"
-                  d="M12.1495 13.1605L7.12057 8.1316L1.96717 13.285L0.711315 12.0292L5.86472 6.87575L0.835794 1.84682L1.84269 0.839932L6.87161 5.86886L12.025 0.715453L13.2809 1.9713L8.12746 7.12471L13.1564 12.1536L12.1495 13.1605Z"
+                  d="M16 8.71198H8.88802V16H7.11198V8.71198H0V7.28802H7.11198V0H8.88802V7.28802H16V8.71198Z"
                   fill="#282938"
                 />
               </svg>
@@ -413,15 +417,15 @@ export default {
               </div>
               <svg
                 class="opacity-70 cursor-pointer"
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   opacity="0.7"
-                  d="M12.1495 13.1605L7.12057 8.1316L1.96717 13.285L0.711315 12.0292L5.86472 6.87575L0.835794 1.84682L1.84269 0.839932L6.87161 5.86886L12.025 0.715453L13.2809 1.9713L8.12746 7.12471L13.1564 12.1536L12.1495 13.1605Z"
+                  d="M16 8.71198H8.88802V16H7.11198V8.71198H0V7.28802H7.11198V0H8.88802V7.28802H16V8.71198Z"
                   fill="#282938"
                 />
               </svg>
@@ -438,9 +442,9 @@ export default {
           class="max-w-[640px] md:min-h-[691px] w-full"
           style="background-image: url(../public/images/seventh-page-bg.png); background-repeat: no-repeat; background-size: cover;"
         >
-          <div class="max-w-[420px] text-white mx-5 md:mx-auto my-10">
+          <div class="max-w-[420px] text-white md:mx-auto my-10 mx-5 sm:mx-auto">
             <p
-              class="text-xl md:text-[54px] font-semibold md:leading-[74px] mb-5"
+              class="text-xl md:text-[54px] font-semibold md:leading-[74px] mb-5 "
             >Building stellar websites for early startups</p>
             <p
               class="text-sm md:text-base font-medium md:leading-7"
@@ -448,7 +452,7 @@ export default {
           </div>
         </div>
         <div class="max-w-[640px] w-full md:min-h-[691px] bg-[#1C1E53]">
-          <div class="max-w-[432px] xs:mx-5 sm:mx-auto text-white mt-24">
+          <div class="max-w-[432px] mx-5 sm:mx-auto text-white mt-24">
             <p class="md:text-[32px] font-medium md:leading-[48px] mb-2 md:mb-4">Send inquiry</p>
             <p
               class="text-[#F4F6FC] text-xs md:text-base font-medium leading-7 mb-5 md:mb-10"

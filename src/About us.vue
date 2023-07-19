@@ -3,14 +3,68 @@ import Navbar from "./components/navbar.vue";
 import Cards from "./components/cards.vue";
 import Footer from "./components/footer.vue";
 </script>
+<script>
+export default {
+  data (){
+    return {
+      items:[
+        {
+          id: 1, 
+          icon:"../public/images/aboutus-icon1.png" ,
+          title: "Customize with ease" ,
+          subtitle:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim." ,
+        },
+        {
+          id: 1, 
+          icon:"../public/images/aboutus-icon2.png" ,
+          title: "Perfectly Responsive" ,
+          subtitle:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim." ,
+        },
+        {
+          id: 1, 
+          icon:"../public/images/aboutus-icon3.png" ,
+          title: "Friendly Support" ,
+          subtitle:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim." ,
+        }
+      ],
+      teams:[
+        {
+          id:1,
+          icon:"../public/images/aboutus-team1.png",
+          name:"John Smith",
+          post:"CEO",
+        },
+        {
+          id:2,
+          icon:"../public/images/aboutus-team2.png",
+          name:"Simon Adams",
+          post:"CTO",
+        },
+        {
+          id:3,
+          icon:"../public/images/aboutus-team3.png",
+          name:"Paul Jones",
+          post:"Design Lead",
+        },
+        {
+          id:4,
+          icon:"../public/images/aboutus-team4.png",
+          name:"Sara Hardin",
+          post:"Project Manager",
+        }
+      ]
+    }
+  }
+}
 
+</script>
 <template>
   <div>
     <navbar />
 
     <!-- first-portion -->
     <div class="max-w-7xl mx-auto">
-      <div class="flex md:flex-row flex-col gap-5 md:gap-0 justify-between my-10 md:my-32 px-5 lg:px-0">
+      <div class="flex md:flex-row flex-col gap-5 md:gap-0 justify-between items-center my-10 md:my-32 px-5 sm:px-auto">
         <div class="max-w-[484px] text-[#282938] text-center md:text-left">
           <p class="md:text-lg font-medium leading-8 mb-2">About us</p>
           <p class="text-2xl md:text-[54px] font-semibold md:leading-[74px] mb-3 md:mb-7">Our designs solve problems</p>
@@ -242,31 +296,19 @@ import Footer from "./components/footer.vue";
   The benefits of working with us
 </p>
 <div class="grid lg:grid-cols-3 gap-8 mx-5 md:mx-auto my-12">
-<div class="bg-[#F4F6FC] p-12">
-  <img src="../public/images/aboutus-icon1.png" class="mb-3 md:mb-5" alt="">
+<div v-for="(item,index) in items" :key="index" class="bg-[#F4F6FC] p-12">
+  <img :src="item.icon"/>
   <p class="text-[#282938] text-6 font-medium leading-9">
-    Customize with ease
+    {{ item.title }}
   </p>
   <p class="text-[#282938] text-4 max-w-[300px]">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.
+    {{ item.subtitle }}
   </p>
 </div>
-<div class="bg-[#F4F6FC] p-12">
-  <img src="../public/images/aboutus-icon2.png" class="mb-3 md:mb-5" alt="">
-  <p class="text-[#282938] text-6 font-medium leading-9">
-    Perfectly Responsive  </p>
-  <p class="text-[#282938] text-4 max-w-[300px]">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.
-  </p>
-</div>
-<div class="bg-[#F4F6FC] p-12">
-  <img src="../public/images/aboutus-icon3.png" class="mb-3 md:mb-5" alt="">
-  <p class="text-[#282938] text-6 font-medium leading-9">
-    Friendly Support  </p>
-  <p class="text-[#282938] text-4 max-w-[300px]">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.
-  </p>
-</div>
+
+
+
+
 </div>
 
 <img src="../public/images/aboutus-icons.png" class="" alt="">
@@ -278,37 +320,18 @@ import Footer from "./components/footer.vue";
   <p class="text-[#282938] text-2xl md:text-5xl font-semibold leading-[64px] text-center">
     Meet our team</p>
     <div class="flex flex-col lg:flex-row mx-5 lg:mx-auto justify-center gap-8 py-6 md:my-12">
-<div class="bg-white p-12 text-center">
-  <img src="../public/images/aboutus-team1.png" class="mx-auto" alt="">
+<div v-for="(teams,index) in teams" :key="index" class="bg-white p-12 text-center">
+  <img :src="teams.icon" class="mx-auto transition duration-300 ease-in-out hover:scale-90" alt="">
   <p class="text-[#282938] text-6 font-medium leading-9">
-    John Smith
+   {{ teams.name }}
   </p>
-  <p class="text-[#282938] text-4 max-w-[300px]  mx-auto">
-    CEO  </p>
+  <p class="text-[#282938] text-4 max-w-[300px]  mx-auto transition duration-300 ease-in-out hover:scale-90">
+    {{teams.post}} </p>
 </div>
-<div class="bg-white p-12 text-center">
-  <img src="../public/images/aboutus-team2.png" class="mx-auto" alt="">
-  <p class="text-[#282938] text-6 font-medium leading-9">
-    Simon Adams</p>
-  <p class="text-[#282938] text-4 max-w-[300px]  mx-auto">
-    CTO  </p>
-</div>
-<div class="bg-white p-12 text-center">
-  <img src="../public/images/aboutus-team3.png" class="mx-auto" alt="">
-  <p class="text-[#282938] text-6 font-medium leading-9">
-    Paul Jones  </p>
-  <p class="text-[#282938] text-4 max-w-[300px]  mx-auto">
-    Design Lead  </p>
-</div>
-<div class="bg-white p-12 text-center">
-  <img src="../public/images/aboutus-team4.png" class="mx-auto" alt="">
-  <p class="text-[#282938] text-6 font-medium leading-9">
-    Sara Hardin  </p>
-  <p class="text-[#282938] text-4 max-w-[300px]">
-    Project Manager  </p>
+
 </div>
 </div>
-</div>
+
     </div>
 
     <Footer />
