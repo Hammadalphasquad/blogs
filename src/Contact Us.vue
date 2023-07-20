@@ -17,7 +17,8 @@ import Footer from "./components/footer.vue";
           <div class="max-w-[420px] text-white mx-5 md:mx-auto my-10">
             <p
               class="text-xl md:text-[54px] font-semibold md:leading-[74px] mb-5"
-            >Building stellar websites for early startups</p>
+            >Building stellar websites for early 
+            startups</p>
             <p
               class="text-sm md:text-base font-medium md:leading-7"
             >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>

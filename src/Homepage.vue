@@ -94,7 +94,7 @@ export default {
           </div>
         </div>
         <div class="xs:mb-10">
-          <img src="../public/images/first-page-bg.png" alt />
+          <img src="/images/first-page-bg.png" alt />
         </div>
       </div>
     </div>
@@ -130,7 +130,7 @@ export default {
         </div>
         <div class="grid mx-auto sm:grid-cols-2 gap-8 md:gap-12 lg:mr-0">
           <div class="max-w-[328px] ">
-            <img src="../public/images/second-page-icon1.png" alt class="mb-2 md:mb-4 mx-auto sm:mx-0" />
+            <img src="/images/second-page-icon1.png" alt class="mb-2 md:mb-4 mx-auto sm:mx-0" />
             <p class="text-[#282938] text-[32px] font-medium leading[48px] md:mb-2 text-center sm:text-left">Strategy</p>
             <p
               class="text-[#282938] text-base leading-7 opacity-70 text-center sm:text-left"
@@ -138,7 +138,7 @@ export default {
           </div>
 
           <div class="max-w-[328px]">
-            <img src="../public/images/second-page-icon2.png" alt class="mb-2 md:mb-4 mx-auto sm:mx-0" />
+            <img src="/images/second-page-icon2.png" alt class="mb-2 md:mb-4 mx-auto sm:mx-0" />
             <p class="text-[#282938] text-[32px] font-medium leading[48px] md:mb-2 text-center sm:text-left">Wireframing</p>
             <p
               class="text-[#282938] text-base leading-7 opacity-70 text-center sm:text-left"
@@ -146,7 +146,7 @@ export default {
           </div>
 
           <div class="max-w-[328px]">
-            <img src="../public/images/second-page-icon3.png" alt class="mb-2 md:mb-4 mx-auto sm:mx-0" />
+            <img src="/images/second-page-icon3.png" alt class="mb-2 md:mb-4 mx-auto sm:mx-0" />
             <p class="text-[#282938] text-[32px] font-medium leading[48px] md:mb-2 text-center sm:text-left">Design</p>
             <p
               class="text-[#282938] text-base leading-7 opacity-70 text-center sm:text-left"
@@ -154,7 +154,7 @@ export default {
           </div>
 
           <div class="max-w-[328px]">
-            <img src="../public/images/second-page-icon4.png" alt class="mb-2 md:mb-4 mx-auto sm:mx-0" />
+            <img src="/images/second-page-icon4.png" alt class="mb-2 md:mb-4 mx-auto sm:mx-0" />
             <p class="text-[#282938] text-[32px] font-medium leading[48px] md:mb-2 text-center sm:text-left">Development</p>
             <p
               class="text-[#282938] text-base leading-7 opacity-70 text-center sm:text-left"
@@ -188,7 +188,7 @@ export default {
       </div>
       <div class="relative flex flex-col md:flex-row gap-6 mb-20">
         <div>
-          <img src="../public/images/third-por-img1.png" alt class />
+          <img src="/images/third-por-img1.png" alt class />
           <div
             class="md:max-w-[396px] flex flex-col justify-end pb-12 z-10 xs:hidden lg:block md:absolute top-0 min-h-[200px] md:min-h-[600px] bg-gradient-to-tl from-[#0d0f43] to-[#797cb9] opacity-80"
           >
@@ -204,8 +204,9 @@ export default {
           </div>
         </div>
         <div class="flex flex-col gap-7">
-          <img src="../public/images/third-por-img2.png" alt />
-          <img src="../public/images/third-por-img3.png" alt />
+          <img src="/images/third-por-img2.png" alt />
+          <img src="
+        /images/third-por-img3.png" alt />
         </div>
       </div>
     </div>
@@ -258,7 +259,7 @@ export default {
               class="md:text-[32px] font-medium md:leading-[48px]"
             >"The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."</p>
             <div class="flex justify-between items-center">
-              <img src="../public/images/fifth-por-icon.png" alt />
+              <img src="/images/fifth-por-icon.png" alt />
               <svg
                 class="cursor-pointer"
                 width="108"
@@ -440,7 +441,7 @@ export default {
       <div class="flex flex-col items-center lg:flex-row xs:mx-5">
         <div
           class="max-w-[640px] md:min-h-[691px] w-full"
-          style="background-image: url(../public/images/seventh-page-bg.png); background-repeat: no-repeat; background-size: cover;"
+          style="background-image: url(/images/seventh-page-bg.png); background-repeat: no-repeat; background-size: cover;"
         >
           <div class="max-w-[420px] text-white md:mx-auto my-10 mx-5 sm:mx-auto">
             <p

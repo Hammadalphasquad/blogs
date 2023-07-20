@@ -8,7 +8,7 @@
           class="max-w-[1058px] flex items-start flex-col md:flex-row justify-between gap-10 md:pt-24 pt-10 px-5 2xl:px-0"
         >
           <div class="">
-            <img src="../../public/images/nav-icon.png" class="md:mb-[23px] xs:w-[100px] md:w-44 mb-3" />
+            <img src="/public/images/nav-icon.png" class="md:mb-[23px] xs:w-[100px] md:w-44 mb-3" />
             <p
               class="md:text-base text-sm md:font-medium md:leading-7 leading-4 text-white opacity-80 md:max-w-[399px]"
             >
@@ -27,7 +27,7 @@
               We are always open to discuss your project, improve your online
               presence and help with your UX/UI design challenges.
             </p>
-            <img src="../../public/images/footer-icons.png" />
+            <img src="/public/images/footer-icons.png" />
           </div>
         </div>
         <div
