@@ -273,7 +273,7 @@ export default {
     >
       <div class="max-w-7xl mx-auto flex flex-col gap-10">
         <div class="max-w-[625px] mx-auto">
-          <p class="text-base md:text-lg font-medium leading-7 text-center my-5 md:mb-5">Features</p>
+          <p class="text-base md:text-2xl font-medium leading-7 text-center my-5 md:mb-5">Features</p>
           <p
             class="text-xl md:text-5xl font-semibold md:leading-[64px] text-center"
           >Design that solves problems, one product at a time</p>
