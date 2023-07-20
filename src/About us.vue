@@ -10,19 +10,19 @@ export default {
       items:[
         {
           id: 1, 
-          icon:"../public/images/aboutus-icon1.png" ,
+          icon:"/images/aboutus-icon1.png" ,
           title: "Customize with ease" ,
           subtitle:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim." ,
         },
         {
           id: 1, 
-          icon:"../public/images/aboutus-icon2.png" ,
+          icon:"/images/aboutus-icon2.png" ,
           title: "Perfectly Responsive" ,
           subtitle:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim." ,
         },
         {
           id: 1, 
-          icon:"../public/images/aboutus-icon3.png" ,
+          icon:"/images/aboutus-icon3.png" ,
           title: "Friendly Support" ,
           subtitle:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim." ,
         }
