@@ -2,12 +2,14 @@
 import Navbar from "./components/navbar.vue";
 import Cards from "./components/cards.vue";
 import Footer from "./components/footer.vue";
+import { onMounted } from "vue";
 </script>
 
 <script>
 export default {
   data() {
     return {
+      showText: false,
       items: [
         {
           id: 1,
@@ -51,8 +53,54 @@ export default {
           subtitle:
             "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi."
         }
+      ],
+
+      faqs: [
+        {
+          id: 1,
+          num: "01",
+          question: "How much time does it take?",
+          answer:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          id: 2,
+          num: "02",
+          question: "What is your class naming convention?",
+          answer:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          id: 3,
+          num: "03",
+          question: "How do you communicate?",
+          answer:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          id: 4,
+          num: "04",
+          question: "I have a bigger project. Can you handle it?",
+          answer:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          id: 5,
+          num: "05",
+          question: "What is your class naming convention?",
+          answer:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
       ]
     };
+  },
+
+  methods: {
+    toggleText(id) {
+
+      const question = this.faqs.find(item => item.id === id);
+      question.showText = !question.showText;
+    }
   }
 };
 </script>
@@ -129,9 +177,11 @@ export default {
           </div>
         </div>
         <div class="grid mx-auto sm:grid-cols-2 gap-8 md:gap-12 lg:mr-0">
-          <div class="max-w-[328px] ">
+          <div class="max-w-[328px]">
             <img src="/images/second-page-icon1.png" alt class="mb-2 md:mb-4 mx-auto sm:mx-0" />
-            <p class="text-[#282938] text-[32px] font-medium leading[48px] md:mb-2 text-center sm:text-left">Strategy</p>
+            <p
+              class="text-[#282938] text-[32px] font-medium leading[48px] md:mb-2 text-center sm:text-left"
+            >Strategy</p>
             <p
               class="text-[#282938] text-base leading-7 opacity-70 text-center sm:text-left"
             >Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</p>
@@ -139,7 +189,9 @@ export default {
 
           <div class="max-w-[328px]">
             <img src="/images/second-page-icon2.png" alt class="mb-2 md:mb-4 mx-auto sm:mx-0" />
-            <p class="text-[#282938] text-[32px] font-medium leading[48px] md:mb-2 text-center sm:text-left">Wireframing</p>
+            <p
+              class="text-[#282938] text-[32px] font-medium leading[48px] md:mb-2 text-center sm:text-left"
+            >Wireframing</p>
             <p
               class="text-[#282938] text-base leading-7 opacity-70 text-center sm:text-left"
             >Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</p>
@@ -147,7 +199,9 @@ export default {
 
           <div class="max-w-[328px]">
             <img src="/images/second-page-icon3.png" alt class="mb-2 md:mb-4 mx-auto sm:mx-0" />
-            <p class="text-[#282938] text-[32px] font-medium leading[48px] md:mb-2 text-center sm:text-left">Design</p>
+            <p
+              class="text-[#282938] text-[32px] font-medium leading[48px] md:mb-2 text-center sm:text-left"
+            >Design</p>
             <p
               class="text-[#282938] text-base leading-7 opacity-70 text-center sm:text-left"
             >Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</p>
@@ -155,7 +209,9 @@ export default {
 
           <div class="max-w-[328px]">
             <img src="/images/second-page-icon4.png" alt class="mb-2 md:mb-4 mx-auto sm:mx-0" />
-            <p class="text-[#282938] text-[32px] font-medium leading[48px] md:mb-2 text-center sm:text-left">Development</p>
+            <p
+              class="text-[#282938] text-[32px] font-medium leading[48px] md:mb-2 text-center sm:text-left"
+            >Development</p>
             <p
               class="text-[#282938] text-base leading-7 opacity-70 text-center sm:text-left"
             >Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</p>
@@ -171,7 +227,7 @@ export default {
           class="text-[#282938] text-lg md:text-5xl font-semibold md:leading-[64px]"
         >View our projects</p>
         <div class="flex items-center gap-5 cursor-pointer">
-          <p class="text-[#282938] text-sm md:text-lg font-medium md:leading-7">View More</p>
+          <p class="text-[#282938] text-sm md:text- font-medium md:leading-7">View More</p>
           <svg
             width="25"
             height="12"
@@ -243,8 +299,8 @@ export default {
     </div>
 
     <!-- fifth-portion -->
-    <div class="bg-[#F4F6FC] bg-opacity-50 min-h-[506px] flex flex-col justify-center">
-      <div class="max-w-7xl mx-auto my-10">
+    <div class="bg-[#F4F6FC] bg-opacity-50 flex flex-col justify-center">
+      <div class="max-w-7xl mx-auto  my-10 md:my-20">
         <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 mx-5 lg:mx-0">
           <div class="max-w-[340px] text-[#282938]">
             <p
@@ -301,23 +357,47 @@ export default {
             <p
               class="text-lg md:text-[38px] font-semibold leading-8 md:leading-[56px] mb-1 md:mb-5"
             >Frequently asked questions</p>
-            <p class="text-[#2405F2] text-[18px] leading-8 font-medium cursor-pointer">Contact us for more info</p>
+            <p
+              class="text-[#2405F2] text-[18px] leading-8 font-medium cursor-pointer"
+            >Contact us for more info</p>
           </div>
-          <div class="max-w-[846.31px] text-[#282938]">
-            <div class="flex justify-between mb-4 md:mb-8">
+          <div class="max-w-[846.31px] w-full text-[#282938]">
+            <div
+              v-for="item in faqs"
+              :key="item.id"
+              class="flex justify-between mb-4 md:mb-8 pb-4 md:pb-8 border-b-2"
+            >
               <div class="flex justify-items-start gap-10">
-                <p class="text-[#2405F2] text-base md:text-2xl font-medium leading-9">01</p>
+                <p class="text-[#2405F2] text-base md:text-2xl font-medium leading-9">{{ item.num }}</p>
                 <div class="max-w-[624px]">
+                  <p class="text-sm md:text-[24px] font-medium md:leading-9">{{ item.question }}</p>
                   <p
-                    class="text-sm md:text-[24px] font-medium md:leading-9"
-                  >How much time does it take?</p>
-                  <p
+                    v-if="item.showText"
                     class="text-xs md:text-lg font-medium leading-5 md:leading-8 opacity-90"
-                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  >{{item.answer}}</p>
                 </div>
               </div>
+
+              <!-- Plus icon -->
               <svg
-                class="opacity-70 cursor-pointer"
+                @click="toggleText(item.id)"
+                class="{ 'opacity-70 cursor-pointer': !item.showText }"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  :fill="!item.showText ? '#282938' : 'none'"
+                  d="M16 8.71198H8.88802V16H7.11198V8.71198H0V7.28802H7.11198V0H8.88802V7.28802H16V8.71198Z"
+                />
+              </svg>
+
+              <!-- Cross icon -->
+              <svg
+                v-if="item.showText"
+                @click="toggleText(item.id)"
                 width="14"
                 height="14"
                 viewBox="0 0 14 14"
@@ -325,109 +405,8 @@ export default {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  opacity="0.7"
+                  :fill="item.showText ? '#282938' : 'none'"
                   d="M12.1495 13.1605L7.12057 8.1316L1.96717 13.285L0.711315 12.0292L5.86472 6.87575L0.835794 1.84682L1.84269 0.839932L6.87161 5.86886L12.025 0.715453L13.2809 1.9713L8.12746 7.12471L13.1564 12.1536L12.1495 13.1605Z"
-                  fill="#282938"
-                />
-              </svg>
-            </div>
-            <hr class="text-[#ECECF1] border-[1px]" />
-            <div class="flex items-center justify-between">
-              <div class="flex items-center justify-between gap-10">
-                <p class="text-[#2405F2] md:text-2xl font-medium md:leading-9">02</p>
-                <div
-                  class="max-w-[624px] text-sm md:text-[24px] font-medium md:leading-9 my-3 md:my-6"
-                >
-                  <p>What is your class naming convention?</p>
-                </div>
-              </div>
-              <svg
-                class="opacity-70 cursor-pointer"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  opacity="0.7"
-                  d="M16 8.71198H8.88802V16H7.11198V8.71198H0V7.28802H7.11198V0H8.88802V7.28802H16V8.71198Z"
-                  fill="#282938"
-                />
-              </svg>
-            </div>
-            <hr class="text-[#ECECF1] border-[1px]" />
-            <div class="flex items-center justify-between">
-              <div class="flex items-center justify-between gap-10">
-                <p class="text-[#2405F2] text-base md:text-2xl font-medium leading-9">03</p>
-                <div
-                  class="max-w-[624px] text-sm md:text-[24px] font-medium md:leading-9 my-3 md:my-6"
-                >
-                  <p>How do you communicate?</p>
-                </div>
-              </div>
-              <svg
-                class="opacity-70 cursor-pointer"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  opacity="0.7"
-                  d="M16 8.71198H8.88802V16H7.11198V8.71198H0V7.28802H7.11198V0H8.88802V7.28802H16V8.71198Z"
-                  fill="#282938"
-                />
-              </svg>
-            </div>
-            <hr class="text-[#ECECF1] border-[1px]" />
-            <div class="flex items-center justify-between">
-              <div class="flex items-center justify-between gap-10">
-                <p class="text-[#2405F2] text-base md:text-2xl font-medium leading-9">04</p>
-                <div
-                  class="max-w-[624px] text-sm md:text-[24px] font-medium md:leading-9 my-3 md:my-6"
-                >
-                  <p>I have a bigger project. Can you handle it?</p>
-                </div>
-              </div>
-              <svg
-                class="opacity-70 cursor-pointer"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  opacity="0.7"
-                  d="M16 8.71198H8.88802V16H7.11198V8.71198H0V7.28802H7.11198V0H8.88802V7.28802H16V8.71198Z"
-                  fill="#282938"
-                />
-              </svg>
-            </div>
-            <hr class="text-[#ECECF1] border-[1px]" />
-            <div class="flex items-center justify-between">
-              <div class="flex items-center justify-between gap-10">
-                <p class="text-[#2405F2] text-base md:text-2xl font-medium leading-9">05</p>
-                <div
-                  class="max-w-[624px] text-sm md:text-[24px] font-medium md:leading-9 my-3 md:my-6"
-                >
-                  <p>What is your class naming convention?</p>
-                </div>
-              </div>
-              <svg
-                class="opacity-70 cursor-pointer"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  opacity="0.7"
-                  d="M16 8.71198H8.88802V16H7.11198V8.71198H0V7.28802H7.11198V0H8.88802V7.28802H16V8.71198Z"
-                  fill="#282938"
                 />
               </svg>
             </div>
@@ -445,7 +424,7 @@ export default {
         >
           <div class="max-w-[420px] text-white md:mx-auto my-10 mx-5 sm:mx-auto">
             <p
-              class="text-xl md:text-[54px] font-semibold md:leading-[74px] mb-5 "
+              class="text-xl md:text-[54px] font-semibold md:leading-[74px] mb-5"
             >Building stellar websites for early startups</p>
             <p
               class="text-sm md:text-base font-medium md:leading-7"

@@ -3,6 +3,7 @@ import Navbar from "./components/navbar.vue";
 import Cards from "./components/cards.vue";
 import Footer from "./components/footer.vue";
 </script>
+
 <script>
 export default {
   data (){
@@ -52,11 +53,13 @@ export default {
           name:"Sara Hardin",
           post:"Project Manager",
         }
-      ]
+      ],
+      
     }
+    
   }
+  
 }
-
 </script>
 <template>
   <div>
@@ -334,6 +337,13 @@ export default {
 
     </div>
 
+    
+    <button @click="showText">Click me</button>
+    <p v-if="displayText">{{ textToShow }}</p>
+
+
+
     <Footer />
   </div>
 </template>
+
