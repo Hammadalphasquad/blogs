@@ -30,25 +30,25 @@ export default {
       teams:[
         {
           id:1,
-          icon:"../public/images/aboutus-team1.png",
+          icon:"/images/aboutus-team1.png",
           name:"John Smith",
           post:"CEO",
         },
         {
           id:2,
-          icon:"../public/images/aboutus-team2.png",
+          icon:"/images/aboutus-team2.png",
           name:"Simon Adams",
           post:"CTO",
         },
         {
           id:3,
-          icon:"../public/images/aboutus-team3.png",
+          icon:"/images/aboutus-team3.png",
           name:"Paul Jones",
           post:"Design Lead",
         },
         {
           id:4,
-          icon:"../public/images/aboutus-team4.png",
+          icon:"/images/aboutus-team4.png",
           name:"Sara Hardin",
           post:"Project Manager",
         }

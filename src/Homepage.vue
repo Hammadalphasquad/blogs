@@ -171,7 +171,7 @@ export default {
           class="text-[#282938] text-lg md:text-5xl font-semibold md:leading-[64px]"
         >View our projects</p>
         <div class="flex items-center gap-5 cursor-pointer">
-          <p class="text-[#282938] text-sm md:text-base font-medium md:leading-7">View More</p>
+          <p class="text-[#282938] text-sm md:text-lg font-medium md:leading-7">View More</p>
           <svg
             width="25"
             height="12"
@@ -192,7 +192,7 @@ export default {
           <div
             class="md:max-w-[396px] flex flex-col justify-end pb-12 z-10 xs:hidden lg:block md:absolute top-0 min-h-[200px] md:min-h-[600px] bg-gradient-to-tl from-[#0d0f43] to-[#797cb9] opacity-80"
           >
-            <div class="max-w-[313px] mx-8">
+            <div class="max-w-[313px] mx-8 mt-16">
               <p
                 class="text-white text-sm md:text-2xl font-semibold md:leading-9 mb-2 md:mb-4"
               >Workhub office Webflow Webflow Design</p>

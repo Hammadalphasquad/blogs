@@ -15,7 +15,7 @@
           </router-link>
         </div>
         <div
-          class="flex flex-col sm:flex-row items-center text-[#BBBBCB] md:gap-6 md:text-base text-sm"
+          class="flex flex-col sm:flex-row items-center text-[#BBBBCB] md:gap-6 md:text-lg text-sm"
         >
           <router-link to="/">
             <p
