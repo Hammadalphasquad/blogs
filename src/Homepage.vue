@@ -97,7 +97,6 @@ export default {
 
   methods: {
     toggleText(id) {
-
       const question = this.faqs.find(item => item.id === id);
       question.showText = !question.showText;
     }
@@ -300,7 +299,7 @@ export default {
 
     <!-- fifth-portion -->
     <div class="bg-[#F4F6FC] bg-opacity-50 flex flex-col justify-center">
-      <div class="max-w-7xl mx-auto  my-10 md:my-20">
+      <div class="max-w-7xl mx-auto my-10 md:my-20">
         <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 mx-5 lg:mx-0">
           <div class="max-w-[340px] text-[#282938]">
             <p
@@ -361,7 +360,7 @@ export default {
               class="text-[#2405F2] text-[18px] leading-8 font-medium cursor-pointer"
             >Contact us for more info</p>
           </div>
-          <div class="max-w-[846.31px] w-full text-[#282938]">
+          <div class="max-w-[846.31px] w-full text-[#282938] transition-all ease-in-out duration-100">
             <div
               v-for="item in faqs"
               :key="item.id"
@@ -370,10 +369,10 @@ export default {
               <div class="flex justify-items-start gap-10">
                 <p class="text-[#2405F2] text-base md:text-2xl font-medium leading-9">{{ item.num }}</p>
                 <div class="max-w-[624px]">
-                  <p class="text-sm md:text-[24px] font-medium md:leading-9">{{ item.question }}</p>
+                  <p class="text-sm md:text-[24px] font-medium md:leading-9 ">{{ item.question }}</p>
                   <p
                     v-if="item.showText"
-                    class="text-xs md:text-lg font-medium leading-5 md:leading-8 opacity-90"
+                    class="text-xs md:text-lg font-medium leading-5 md:leading-8 opacity-90 "
                   >{{item.answer}}</p>
                 </div>
               </div>
