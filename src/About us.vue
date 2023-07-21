@@ -338,8 +338,7 @@ export default {
     </div>
 
     
-    <button @click="showText">Click me</button>
-    <p v-if="displayText">{{ textToShow }}</p>
+
 
 
 
