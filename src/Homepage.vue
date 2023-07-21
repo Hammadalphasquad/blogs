@@ -246,7 +246,7 @@ export default {
         <div>
           <img src="/images/third-por-img1.png" alt class />
           <div
-            class="md:max-w-[396px] flex flex-col justify-end pb-12 z-10 xs:hidden lg:block md:absolute top-0 min-h-[200px] md:min-h-[600px] bg-gradient-to-tl from-[#0d0f43] to-[#797cb9] opacity-80"
+            class="md:max-w-[396px] basis-[70%] flex flex-col justify-end pb-12 z-10 xs:hidden lg:block md:absolute top-0 h-full bg-gradient-to-tl from-[#0d0f43] to-[#797cb9] opacity-80"
           >
             <div class="max-w-[313px] mx-8 mt-16">
               <p
@@ -259,7 +259,7 @@ export default {
             </div>
           </div>
         </div>
-        <div class="flex flex-col gap-7">
+        <div class="flex flex-col gap-7 basis-[30%]">
           <img src="/images/third-por-img2.png" alt />
           <img src="
         /images/third-por-img3.png" alt />
@@ -432,7 +432,7 @@ export default {
           </div>
         </div>
         <div class="max-w-[640px] w-full md:min-h-[691px] bg-[#1C1E53]">
-          <div class="max-w-[432px] mx-5 sm:mx-auto text-white mt-24">
+          <div class="max-w-[432px] mx-5 sm:mx-auto text-white my-10 md:mt-24">
             <p class="md:text-[32px] font-medium md:leading-[48px] mb-2 md:mb-4">Send inquiry</p>
             <p
               class="text-[#F4F6FC] text-xs md:text-base font-medium leading-7 mb-5 md:mb-10"
@@ -459,7 +459,7 @@ export default {
               class="text-[#1B1C2B] text-xs md:text-[18px] font-semibold leading-8 bg-[#FCD980] w-full rounded-full py-2 md:py-4"
             >Send an Inquiry</button>
             <div class="flex justify-center">
-              <div class="flex items-center gap-3 cursor-pointer text-white my-3 md:my-7">
+              <div class="flex items-center gap-3 cursor-pointer text-white mt-5 md:my-7">
                 <p class="text-base font-medium mx-auto leading-7">Get in touch with us</p>
                 <svg
                   width="25"

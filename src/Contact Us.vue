@@ -25,7 +25,7 @@ import Footer from "./components/footer.vue";
           </div>
         </div>
         <div class="max-w-[640px] w-full md:min-h-[691px] bg-[#1C1E53]">
-          <div class="max-w-[432px] xs:mx-5 sm:mx-auto text-white mt-24">
+          <div class="max-w-[432px] mx-5 sm:mx-auto text-white my-10 md:mt-24">
             <p class="md:text-[32px] font-medium md:leading-[48px] mb-2 md:mb-4">Send inquiry</p>
             <p
               class="text-[#F4F6FC] text-xs md:text-base font-medium leading-7 mb-5 md:mb-10"
@@ -52,7 +52,7 @@ import Footer from "./components/footer.vue";
               class="text-[#1B1C2B] text-xs md:text-[18px] font-semibold leading-8 bg-[#FCD980] w-full rounded-full py-2 md:py-4"
             >Send an Inquiry</button>
             <div class="flex justify-center">
-              <div class="flex items-center gap-3 cursor-pointer text-white my-3 md:my-7">
+              <div class="flex items-center gap-3 cursor-pointer text-white mt-5 md:my-7">
                 <p class="text-base font-medium mx-auto leading-7">Get in touch with us</p>
                 <svg
                   width="25"
